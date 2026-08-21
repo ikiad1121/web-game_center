@@ -1,0 +1,67 @@
+:root{
+    --super-pale-gray:#d8d8d8;
+    --pale-gray:#c0c0c0;
+
+    --pale-dark:#808080;
+    --dark:#404040;
+
+    --gold:#ccaa00;
+}
+
+.golden{
+    font-size:22px;
+    color:var(--gold);
+    font-weight:bold;
+}
+
+.even-back, .noeven-back{
+    font-size:40px;
+    width:60px;
+    height:60px;
+    text-align:center;
+    vertical-align:center;
+}
+
+.noeven-back{
+    background-color:var(--super-pale-gray);
+}
+
+.even-back{
+    background-color:var(--pale-gray);
+}
+
+.noeven-back a, .even-back a{
+    text-decoration:none;
+    color:var(--dark);
+}
+
+.noeven-back a:hover, .even-back a:hover{
+    text-decoration:none;
+    color:var(--pale-dark);
+}
+
+.noeven-back a.gold, .even-back a.gold, .noeven-back p.gold, .even-back p.gold{
+    color:var(--gold);
+    font-weight:bold;
+}
+
+.hops{
+    font-size:22px;
+}
+
+
+@media screen and (max-width: 620px) {
+    .noeven-back, .even-back{
+        font-size:33px;
+        width:50px;
+        height:50px;
+    }
+  }
+
+@media screen and (max-width: 540px) {
+    .noeven-back, .even-back{
+        font-size:27px;
+        width:40px;
+        height:40px;
+    }
+  }

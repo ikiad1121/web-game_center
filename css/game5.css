@@ -1,0 +1,134 @@
+:root{
+    --brown:#804000;
+    --pale-brown:#c08000;
+    --super-pale-brown:#e0c080;
+
+    --light-gray:#cccccc;
+    --gray:#888888;
+    --black:#000000;
+
+    --red:#ff0000;
+    --yellow:#ffcc00;
+    --white:#ffffff;
+
+    --gold:#ccaa00;
+    --silver:#c0c0c0;
+    --copper:#aa6644;
+
+    --yellow-level1:#cc9900;
+    --yellow-level2:#996600;
+    --yellow-level3:#663300;
+    --yellow-level4:#330000;
+}
+
+.hops{
+    font-size:22px;
+}
+
+.copper{
+    color:var(--copper);
+}
+
+.silver{
+    color:var(--silver);
+}
+
+.gold{
+    color:var(--gold);
+}
+
+#game5-start-div, #space-main, #target-mark, #scoreboard, #resultboard, #comment1board, #comment2board{
+    padding-left:60px;
+}
+
+.space-main{
+    position:relative;
+}
+
+.space-ufo1{
+    position:relative;
+    animation:ufo-move1 12s linear;
+}
+
+.space-ufo2{
+    position:relative;
+    animation:ufo-move2 14s linear;
+}
+
+.space-ufo3{
+    position:relative;
+    animation:ufo-move3 16s linear;
+}
+
+/* add-miya */
+.pause-ufo{
+    animation-play-state: paused;
+    pointer-events: none;
+}
+/**/
+
+.space-ufo:active{
+    animation-play-state: paused;
+}
+
+#target-mark{
+    display:flex;
+    flex-direction:row;
+    height:10px;
+}
+
+.target1{
+    width:87px;
+}
+
+.target2{
+    background-color:var(--silver);
+    width:20px;
+}
+
+.target3{
+    background-color:var(--gold);
+    width:40px;
+}
+
+.target4{
+    background-color:var(--silver);
+    width:200px;
+}
+
+@media screen and (max-width: 480px) {
+    #game5-start-div, #space-main, #target-mark, #scoreboard, #resultboard, #comment1board, #comment2board{
+        padding-left:0px;
+    }
+}
+
+@keyframes ufo-move1 {
+    0%{
+        left: calc(0% - 3000px);
+    }
+
+    100%{
+        left: calc(100% + 2800px);
+    }
+}
+
+@keyframes ufo-move2 {
+    0%{
+        left: calc(0% - 4000px);
+    }
+
+    100%{
+        left: calc(100% + 2800px);
+    }
+}
+
+@keyframes ufo-move3 {
+    0%{
+        left: calc(0% - 5000px);
+    }
+
+    100%{
+        left: calc(100% + 2800px);
+    }
+}
+

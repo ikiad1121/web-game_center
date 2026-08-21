@@ -1,0 +1,83 @@
+:root{
+    --brown:#804000;
+    --pale-brown:#c08000;
+    --super-pale-brown:#e0c080;
+
+    --gray:#cccccc;
+
+    --red:#ff0000;
+    --yellow:#ffcc00;
+    --white:#ffffff;
+}
+
+#door-floor{
+    display:flex;
+}
+
+.blanks{
+    width:60px;
+}
+
+#game2-start-div, #door-floor, #scoreboard{
+    padding-left: 60px;
+}
+
+.doorstyle0, .doorstyle1, .doorstyle2, .doorstyle3{
+    width:112px;
+    height:172px;
+    border:4px var(--white) solid;
+}
+
+.doorstyle0:hover, .doorstyle1:hover, .doorstyle2:hover, .doorstyle3:hover{
+    border:4px var(--yellow) solid;
+}
+
+.doorstyle0{
+    background-color:var(--brown);
+}
+
+.doorstyle1{
+    background-color:var(--pale-brown);
+}
+
+.doorstyle2{
+    background-color:var(--pale-brown);
+}
+
+.doorstyle3{
+    background-color:var(--gray);
+}
+
+.doornob-anc{
+    position:relative;
+    width:120px;
+    height:180px;
+}
+
+.doornob-ver{
+    position:absolute;
+    top:80px;
+    left:75px;
+    width:40px;
+}
+
+.batten{
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:var(--red);
+    font-size:100px;
+    font-weight:bold;
+}
+
+.hops{
+    font-size:22px;
+}
+
+@media screen and (max-width: 480px) {
+    #game2-start-div, #door-floor, #scoreboard{
+        padding-left:0px;
+    }
+}
+
+

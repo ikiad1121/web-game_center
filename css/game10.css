@@ -1,0 +1,59 @@
+:root{
+    --brown:#804000;
+    --pale-brown:#c08000;
+    --super-pale-brown:#e0c080;
+
+    --black:#000000;
+    --gray:#cccccc;
+    --light-gray:#dddddd;
+    --super-light-gray:#eeeeee;
+
+    --red:#ff0000;
+    --yellow:#ffcc00;
+    --blue:#0066ff;
+    --white:#ffffff;
+}
+
+#game10-start-div, #dice-base, #keyboard, #scoreboard, #totalboard, #resultboard, #comment1board, #comment2board, #ruleboard{
+    padding-left:60px;
+}
+
+.dice-align{
+    display:flex;
+    width:60%;
+}
+
+#keyboard{
+    display:block;
+}
+
+#keyboard div{
+    width:20%;
+}
+
+.hops{
+    font-size:22px;
+}
+
+#puzzle-main.inpframe{
+    float:left;
+}
+
+#puzzle-main span.right{
+    font-size:30px;
+    color:var(--red);
+}
+
+#puzzle-main span.different{
+    font-size:30px;
+    color:var(--blue);
+}
+
+@media screen and (max-width: 480px) {
+    #game8-start-div, #puzzle-main, #keyboard, #timerboard, #scoreboard, #resultboard, #comment1board, #comment2board{
+        padding-left:0px;
+    }
+}
+
+
+

@@ -1,0 +1,41 @@
+:root{
+    --brown:#804000;
+    --pale-brown:#c08000;
+    --super-pale-brown:#e0c080;
+
+    --gray:#888888;
+
+    --red:#ff0000;
+    --yellow:#ffcc00;
+    --white:#ffffff;
+
+    --gold:#ccaa00;
+    --silver:#c0c0c0;
+    --copper:#aa6644;
+}
+
+#game3-start-div, #saisen, #scoreboard, #timeboard{
+    padding-left: 60px;
+}
+
+.hops{
+    font-size:22px;
+}
+
+.copper{
+    color:var(--copper);
+}
+
+.silver{
+    color:var(--silver);
+}
+
+.gold{
+    color:var(--gold);
+}
+
+@media screen and (max-width: 480px) {
+    #game3-start-div, #saisen, #scoreboard, #timeboard{
+        padding-left:0px;
+    }
+}

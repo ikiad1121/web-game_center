@@ -1,0 +1,78 @@
+:root{
+    --brown:#804000;
+    --pale-brown:#c08000;
+    --super-pale-brown:#e0c080;
+
+    --black:#000000;
+    --gray:#cccccc;
+    --light-gray:#dddddd;
+    --super-light-gray:#eeeeee;
+
+    --red:#ff0000;
+    --yellow:#ffcc00;
+    --blue:#0066ff;
+    --white:#ffffff;
+}
+
+#game7-start-div, #calcer-main, #answer-main, #keyboard, #timerboard, #scoreboard, #resultboard, #comment1board, #comment2board{
+    padding-left:60px;
+}
+
+#calcsign{
+    font-size:24px;
+}
+
+#calcsign span{
+    font-size:30px;
+}
+
+#calcsign span.right{
+    color:var(--red);
+}
+
+#calcsign span.different{
+    color:var(--blue);
+}
+
+.answer{
+    font-size:20px;
+    width:120px;
+    height:30px;
+    border:2px solid var(--black);
+    margin:1px;
+    vertical-align: center;
+    text-align: right;
+}
+
+.keyboard{
+    display:flex;
+}
+
+.mas{
+    font-size:30px;
+    width:40px;
+    padding: 2px;
+    border:2px solid var(--black);
+    margin:1px;
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+.mas:hover{
+    background-color: var(--super-light-gray);
+}
+
+.mas a, .mas a:visited{
+    color:var(--black);
+}
+
+.hops{
+    font-size:22px;
+}
+
+@media screen and (max-width: 480px) {
+    #game7-start-div, #calcer-main, #answer-main, #keyboard, #timerboard, #scoreboard, #resultboard, #comment1board, #comment2board{
+        padding-left:0px;
+    }
+}
+

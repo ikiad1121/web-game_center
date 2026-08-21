@@ -1,0 +1,90 @@
+:root{
+    --brown:#804000;
+    --pale-brown:#c08000;
+    --super-pale-brown:#e0c080;
+
+    --black:#000000;
+    --gray:#cccccc;
+    --light-gray:#dddddd;
+    --super-light-gray:#eeeeee;
+
+    --red:#ff0000;
+    --yellow:#ffcc00;
+    --blue:#0066ff;
+    --white:#ffffff;
+}
+
+#game9-start-div, #trump-main1, #trump-main2, #trump-hr, #keyboard, #complayer1board, #complayer2board, #complayer3board, #complayer4board, #complayer5board, #scoreboard, #resultboard, #comment1board, #comment2board{
+    padding-left:60px;
+}
+
+#trump-hr{
+    color:var(--black);
+}
+
+.answerframe{
+    width:20%;
+    aspect-ratio: 2/1;
+    padding-left:1px;
+}
+
+.answerframe img{
+    vertical-align: bottom;
+}
+
+.inpframe{
+    width:20%;
+    aspect-ratio: 2/1;
+    border:1px solid var(--gray);
+}
+
+#keyboard{
+    display:block;
+}
+
+#keyboard div{
+    width:20%;
+}
+
+.hops{
+    font-size:22px;
+}
+
+#puzzle-main.inpframe{
+    float:left;
+}
+
+#puzzle-main span.right{
+    font-size:30px;
+    color:var(--red);
+}
+
+#puzzle-main span.different{
+    font-size:30px;
+    color:var(--blue);
+}
+
+.games{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.games-mas{
+    width:200px;
+    margin:10px 20px 10px 0;
+    border:1px solid var(--light-gray);
+}
+
+.games-mas-td{
+    background-color: var(--light-gray);
+    padding:1px;
+}
+
+@media screen and (max-width: 480px) {
+    #game8-start-div, #puzzle-main, #keyboard, #timerboard, #scoreboard, #resultboard, #comment1board, #comment2board{
+        padding-left:0px;
+    }
+}
+
+
+

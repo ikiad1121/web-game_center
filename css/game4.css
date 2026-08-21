@@ -1,0 +1,94 @@
+:root{
+    --brown:#804000;
+    --pale-brown:#c08000;
+    --super-pale-brown:#e0c080;
+
+    --light-gray:#cccccc;
+    --gray:#888888;
+    --black:#000000;
+
+    --red:#ff0000;
+    --yellow:#ffcc00;
+    --white:#ffffff;
+
+    --gold:#ccaa00;
+    --silver:#c0c0c0;
+    --copper:#aa6644;
+
+    --yellow-level1:#cc9900;
+    --yellow-level2:#996600;
+    --yellow-level3:#663300;
+    --yellow-level4:#330000;
+}
+
+.hops{
+    font-size:22px;
+}
+
+.copper{
+    color:var(--copper);
+}
+
+.silver{
+    color:var(--silver);
+}
+
+.gold{
+    color:var(--gold);
+}
+
+#game4-start-div, #game4-timerstop-div, .timers, #scoreboard, #resultboard, #comment1board, #comment2board{
+    padding-left:60px;
+}
+
+.game4-timerstop-button-off{
+    display:none;
+}
+
+.game4-timerstop-button-on{
+    display:inline;
+}
+
+#timer-main{
+    display:table-cell;
+    background-color: var(--black);
+    border: solid var(--red);
+    border-radius: 10px;
+
+    padding:10px;
+    width:96px;
+    height:36px;
+    text-align:center;
+    vertical-align: center;
+}
+
+.timertext-brighter0{
+    color: var(--yellow);    
+}
+
+.timertext-brighter1{
+    color: var(--yellow-level1);    
+}
+
+.timertext-brighter2{
+    color: var(--yellow-level2);    
+}
+
+.timertext-brighter3{
+    color: var(--yellow-level3);    
+}
+
+.timertext-brighter4{
+    color: var(--yellow-level4);    
+}
+
+.timertext-brighter5{
+    color: var(--black);    
+}
+
+@media screen and (max-width: 480px) {
+    #game4-start-div, #game4-timerstop-div, .timers, #scoreboard, #resultboard, #comment1board, #comment2board{
+        padding-left:0px;
+    }
+}
+

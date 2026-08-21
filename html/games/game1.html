@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/game1.css" />
+        <title>宝探しゲーム</title>
+    </head>
+    <body>
+        <header></header>
+        <div class="topnav">
+            <div id="topnav-platform1"></div>
+            <div id="topnav-platform2"></div>
+            <div id="topnav-platform3"></div>
+        </div>
+        <div class="nav-main">
+            <div class="sidenav">
+                <div id="sidenav-platform1"></div>
+                <div id="sidenav-platform2"></div>
+                <div id="sidenav-platform3"></div>
+            </div>
+            <main>
+                <h1></h1>
+                <div class="main-floats"></div>
+                <div id="game1-start-div">
+                    <button type="button" id="game-start-button">スタート</button>
+                </div>
+                <br>
+                <div class="main-floats"></div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="treasure0" class="even-back"></td>
+                            <td id="treasure1" class="noeven-back"></td>
+                            <td id="treasure2" class="even-back"></td>
+                            <td id="treasure3" class="noeven-back"></td>
+                            <td id="treasure4" class="even-back"></td>
+                            <td id="treasure5" class="noeven-back"></td>
+                            <td id="treasure6" class="even-back"></td>
+                            <td id="treasure7" class="noeven-back"></td>
+                        </tr>
+                        <tr>
+                            <td id="treasure8" class="noeven-back"></td>
+                            <td id="treasure9" class="even-back"></td>
+                            <td id="treasure10" class="noeven-back"></td>
+                            <td id="treasure11" class="even-back"></td>
+                            <td id="treasure12" class="noeven-back"></td>
+                            <td id="treasure13" class="even-back"></td>
+                            <td id="treasure14" class="noeven-back"></td>
+                            <td id="treasure15" class="even-back"></td>
+                        </tr>
+                        <tr>
+                            <td id="treasure16" class="even-back"></td>
+                            <td id="treasure17" class="noeven-back"></td>
+                            <td id="treasure18" class="even-back"></td>
+                            <td id="treasure19" class="noeven-back"></td>
+                            <td id="treasure20" class="even-back"></td>
+                            <td id="treasure21" class="noeven-back"></td>
+                            <td id="treasure22" class="even-back"></td>
+                            <td id="treasure23" class="noeven-back"></td>
+                        </tr>
+                        <tr>
+                            <td id="treasure24" class="noeven-back"></td>
+                            <td id="treasure25" class="even-back"></td>
+                            <td id="treasure26" class="noeven-back"></td>
+                            <td id="treasure27" class="even-back"></td>
+                            <td id="treasure28" class="noeven-back"></td>
+                            <td id="treasure29" class="even-back"></td>
+                            <td id="treasure30" class="noeven-back"></td>
+                            <td id="treasure31" class="even-back"></td>
+                        </tr>
+                        <tr>
+                            <td id="treasure32" class="even-back"></td>
+                            <td id="treasure33" class="noeven-back"></td>
+                            <td id="treasure34" class="even-back"></td>
+                            <td id="treasure35" class="noeven-back"></td>
+                            <td id="treasure36" class="even-back"></td>
+                            <td id="treasure37" class="noeven-back"></td>
+                            <td id="treasure38" class="even-back"></td>
+                            <td id="treasure39" class="noeven-back"></td>
+                        </tr>
+                        <tr>
+                            <td id="treasure40" class="noeven-back"></td>
+                            <td id="treasure41" class="even-back"></td>
+                            <td id="treasure42" class="noeven-back"></td>
+                            <td id="treasure43" class="even-back"></td>
+                            <td id="treasure44" class="noeven-back"></td>
+                            <td id="treasure45" class="even-back"></td>
+                            <td id="treasure46" class="noeven-back"></td>
+                            <td id="treasure47" class="even-back"></td>
+                        </tr>
+                        <tr>
+                            <td id="treasure48" class="even-back"></td>
+                            <td id="treasure49" class="noeven-back"></td>
+                            <td id="treasure50" class="even-back"></td>
+                            <td id="treasure51" class="noeven-back"></td>
+                            <td id="treasure52" class="even-back"></td>
+                            <td id="treasure53" class="noeven-back"></td>
+                            <td id="treasure54" class="even-back"></td>
+                            <td id="treasure55" class="noeven-back"></td>
+                        </tr>
+                        <tr>
+                            <td id="treasure56" class="noeven-back"></td>
+                            <td id="treasure57" class="even-back"></td>
+                            <td id="treasure58" class="noeven-back"></td>
+                            <td id="treasure59" class="even-back"></td>
+                            <td id="treasure60" class="noeven-back"></td>
+                            <td id="treasure61" class="even-back"></td>
+                            <td id="treasure62" class="noeven-back"></td>
+                            <td id="treasure63" class="even-back"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="main-floats"></div>
+                <div id="scoreboard">
+                    <br>
+                    <div class="main-floats"></div>
+                    <h1>宝探しゲーム</h1>
+                    <div class="main-floats"></div>
+                    <p>
+                        このゲームは50のターンの間でお宝を探すゲームである。<br>
+                        <div class="main-floats"></div>
+                        64マスのテーブルの中にお宝が5つあり、金色の <span class="golden">O</span> があればそれがお宝となる。
+                    </p>
+                </div>
+            </main>
+        </div>
+        <footer></footer>
+        <script src="../../js/script.js"></script>
+        <script src="../../js/platform1.js"></script>
+        <script src="../../js/sideview1.js"></script>
+        <script src="../../js/topview1.js"></script>
+        <script src="../../js/game1.js"></script>
+    </body>
+</html>

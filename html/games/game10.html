@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/game10.css" />
+        <title>サイコロゲーム</title>
+    </head>
+    <body>
+        <header></header>
+        <div class="topnav">
+            <div id="topnav-platform1"></div>
+            <div id="topnav-platform2"></div>
+            <div id="topnav-platform3"></div>
+        </div>
+        <div class="nav-main">
+            <div class="sidenav">
+                <div id="sidenav-platform1"></div>
+                <div id="sidenav-platform2"></div>
+                <div id="sidenav-platform3"></div>
+            </div>
+            <main>
+                <h1></h1>
+                <div id="game10-start-div">
+                    <button type="button" id="game-start-button">スタート</button>
+                </div>
+                <br>
+                <div id="dice-base">
+                    <h1>サイコロゲーム</h1>
+                    <p>
+                        このゲームは5個のサイコロを使用し、数字をそろえるゲームである。
+                    </p>
+                    <br>
+                    <p>
+                        (ルールは以下の通り)<br>
+                        &nbsp;&nbsp;1. ゲームは全10回行われる。<br>
+                        &nbsp;&nbsp;2. 5個のサイコロの目の合計が「20」以上で「Super-Dice」となり、サイコロの目の合計の分だけ得点が加算される。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(但し、5個のサイコロの目がすべて「5」の時並びに5個のサイコロの目が「2」「3」「4」「5」「6」または「6」「5」「4」「3」「2」で並んだ場合は下記参照)<br>
+                        &nbsp;&nbsp;2. 5個のサイコロの目がすべて「2」「3」「4」「5」であれば「All-Dice」となり、サイコロの目の合計+10ptsが加算される。<br>
+                        &nbsp;&nbsp;3. 仮にもし5個のサイコロの目の合計が「30」(つまり5個のサイコロの目がすべて「6」)であれば「Full-Dice」となり、50ptsが加算される。<br>
+                        &nbsp;&nbsp;4. 逆にもし5個のサイコロの目の合計が「5」(つまり5個のサイコロの目がすべて「1」)であれば「One-Dice」となり、30ptsが加算される。<br>
+                        &nbsp;&nbsp;5. 5個中4個のサイコロの目が一致したら、サイコロの目の合計+5ptsが加算される。<br>
+                        &nbsp;&nbsp;6. 5個中3個のサイコロの目が一致したら、サイコロの目の合計+3ptsが加算される。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加えて、残りの2個のサイコロの目も一致したら追加で+3ptsが加算される。<br>
+                        &nbsp;&nbsp;7. 5個のサイコロの目が「1」「2」「3」「4」「5」、「2」「3」「4」「5」「6」であれば45ptsが加算される。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;仮に昇順・降順で並んだ場合は追加で+20ptsが加算される。<br>
+                        &nbsp;&nbsp;8. 5個のサイコロの目が「1」「2」「3」「4」、「2」「3」「4」「5」、「3」「4」「5」「6」であれば25ptsが加算される。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;仮に昇順・降順で並んだ場合は追加で+15ptsが加算される。
+                    </p>
+                </div>
+                <br>
+                <div id="totalboard"></div>
+                <div id="scoreboard"></div>
+                <div id="comment1board"></div>
+                <div id="comment2board"></div>
+                <div id="ruleboard"></div>
+            </main>
+        </div>
+        <footer></footer>
+        <script src="../../js/script.js"></script>
+        <script src="../../js/platform1.js"></script>
+        <script src="../../js/sideview1.js"></script>
+        <script src="../../js/topview1.js"></script>
+        <script src="../../js/game10.js"></script>
+    </body>
+</html>

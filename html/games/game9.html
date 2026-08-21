@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/game9.css" />
+        <title>ババ抜きゲーム</title>
+    </head>
+    <body>
+        <header></header>
+        <div class="topnav">
+            <div id="topnav-platform1"></div>
+            <div id="topnav-platform2"></div>
+            <div id="topnav-platform3"></div>
+        </div>
+        <div class="nav-main">
+            <div class="sidenav">
+                <div id="sidenav-platform1"></div>
+                <div id="sidenav-platform2"></div>
+                <div id="sidenav-platform3"></div>
+            </div>
+            <main>
+                <h1></h1>
+                <div id="game9-start-div">
+                    <button type="button" id="game-start-button">スタート</button>
+                </div>
+                <br>
+                <div id="trump-main1">
+                    <h1>ババ抜きゲーム</h1>
+                    <p>
+                        このゲームはJokerを含めた53枚のトランプを使用し、1枚ずつ引いては引かれ、最終的には手持ちの札を0にするゲームである。<br>
+                        同じカードの番号が揃った段階で捨て札となり、最終的に手持ちの札が0枚になった人から順に順位が付けられ、最後までJokerを持っていた人が最下位となる。
+                    </p>
+                    <br>
+                    <p>
+                        運が良ければ1巡目の段階で上がるという可能性も？<br>
+                        (※トランプの素材は「イラストAC」(<a href="https://www.ac-illust.com/">https://www.ac-illust.com/</a>)から拝借させていただきました。)
+                    </p>
+                </div>
+                <div id="trump-hr"></div>
+                <div id="trump-main2"></div>
+                <br>
+                <div id="keyboard"></div>
+                <br>
+                <div id="complayer1board"></div>
+                <div id="complayer2board"></div>
+                <div id="complayer3board"></div>
+                <div id="complayer4board"></div>
+                <div id="complayer5board"></div>
+                <div id="scoreboard"></div>
+                <br>
+                <div id="resultboard"></div>
+            </main>
+        </div>
+        <footer></footer>
+        <script src="../../js/script.js"></script>
+        <script src="../../js/platform1.js"></script>
+        <script src="../../js/sideview1.js"></script>
+        <script src="../../js/topview1.js"></script>
+        <script src="../../js/game9.js"></script>
+    </body>
+</html>
